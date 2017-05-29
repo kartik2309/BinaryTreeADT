@@ -30,6 +30,9 @@ Other standard files:
 StdAfx.h, StdAfx.cpp
     These files are used to build a precompiled header (PCH) file
     named BinaryTreeADT.pch and a precompiled types file named StdAfx.obj.
+Tree.h,Tree.cpp
+     The functions have been prototyped in Tree.h header file.
+	 The functions have been defined in Tree.cpp file.
 
 /////////////////////////////////////////////////////////////////////////////
 Other notes:
@@ -38,7 +41,7 @@ AppWizard uses "TODO:" comments to indicate parts of the source code you
 should add to or customize.
 
 /////////////////////////////////////////////////////////////////////////////
-
+FUNCTION AVAILABLE FOR BINARY TREE:-
 Addnode(integer):Add a new node to Binary Tree.Takes an integer as parameter to add it to the Tree
 
 Delnode(integer):Deletes a node from the Binary Tree.Takes an integer as parameter to delete it from the Tree
