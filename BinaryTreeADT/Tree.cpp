@@ -230,6 +230,31 @@ int Tree::rightprivate(int number, nodeptr curr)
 	else return NULL;
 }
 
+int Tree::depthprivate(nodeptr curr,int i)
+{
+	if (curr != NULL) {
+		if(curr->left == NULL & curr->right == NULL) {
+			return i;
+		}
+		else if (curr->left != NULL && curr->right == NULL) {
+			curr = curr->left;
+			i++;
+			depthprivate(curr, i);
+		}
+		else if (curr->left == NULL && curr->right != NULL) {
+			curr = curr->right;
+			i++;
+			depthprivate(curr, i);
+		}
+		else if (curr->left != NULL && curr->right != NULL) {
+			curr = curr->left;
+			i++;
+			depthprivate(curr, i);
+		}
+	}
+	else return i;
+}
+
 bool Tree::isexternalprivate(int number, nodeptr curr)
 {
 	if (curr != NULL) {
@@ -311,6 +336,13 @@ int Tree::Right(int number)
 {
 	nodeptr pointer = root;
 	return rightprivate(number, pointer);
+}
+
+int Tree::Depth()
+{
+	nodeptr pointer = root;
+	int index = 0;
+	return depthprivate(pointer,index);
 }
 
 bool Tree::isEmpty()

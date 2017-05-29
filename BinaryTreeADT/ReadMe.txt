@@ -38,3 +38,25 @@ AppWizard uses "TODO:" comments to indicate parts of the source code you
 should add to or customize.
 
 /////////////////////////////////////////////////////////////////////////////
+
+Addnode(integer):Add a new node to Binary Tree.Takes an integer as parameter to add it to the Tree
+
+Delnode(integer):Deletes a node from the Binary Tree.Takes an integer as parameter to delete it from the Tree
+
+Search(integer):Searches a number in the Binary Tree.Takes an integer as paramater to search it in the Tree.
+
+Smallestnumber():Return smallest number from the Tree.
+
+Root():Returns the integer value of the root node
+
+Parent(integer):Returns the integer value the parent of the particular number that has been passed as parameter.
+
+Left(integer):Returns the integer value the left child of the particular number that has been passed as parameter.
+
+Right(integer):Returns the integer value the right child of the particular number that has been passed as parameter.
+
+isEmpty():Returns 0 if Tree is empty else returns 1.
+
+isExternal(integer):Returns 0 if the integer parameter passed is in the leaf node,else returns 1.
+
+Depth():Returns depth of the tree.Root node is considered at depth zero.

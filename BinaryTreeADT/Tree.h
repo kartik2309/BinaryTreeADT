@@ -21,6 +21,7 @@ protected:
 	int parentprivate(int, nodeptr);
 	int leftprivate(int, nodeptr);
 	int rightprivate(int, nodeptr);
+	int depthprivate(nodeptr, int);
 	bool isexternalprivate(int, nodeptr);
 public:
 	Tree();
@@ -33,6 +34,7 @@ public:
 	int Parent(int);
 	int Left(int);
 	int Right(int);
+	int Depth();
 	bool isEmpty();
 	bool isExternal(int);
 };
