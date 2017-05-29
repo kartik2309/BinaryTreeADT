@@ -6,7 +6,8 @@
 
 int main()
 {
-	//To Access tree functions "BinaryTree.Yourfunction"
+	//TODO : Add Your Program Code Here.
+	//Use the Object "BinaryTree" to Access Binary Tree Functions.
 	system("pause");
     return 0;
 }
